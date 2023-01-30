@@ -60,16 +60,16 @@ public class Shape {
             	l.info("Enter the radius :");
                 int radius = sc.nextInt();
                 Shape circle = new Shape(radius);
-                l.info("Perimeter of Circle :" + circle.perimeter(radius));
-                l.info("Area of Circle :" + circle.area(radius));
+               logger.log("Perimeter of Circle :" + circle.perimeter(radius));
+                logger.log("Area of Circle :" + circle.area(radius));
                 break;
             case "rectangle":
             	l.info("Enter the length and width :");
                 int length = sc.nextInt();
                 int width = sc.nextInt();
                 Shape rectangle = new Shape(length, width);
-                l.info("Perimeter of rectangle :" + rectangle.perimeter(length, width));
-                l.info("Area of rectangle :" + rectangle.area(length, width));
+                logger.log("Perimeter of rectangle :" + rectangle.perimeter(length, width));
+                logger.log("Area of rectangle :" + rectangle.area(length, width));
                 break;
             case "triangle":
             	l.info("Enter the three sides of the traiangle:");
@@ -78,8 +78,8 @@ public class Shape {
                 int base = sc.nextInt();
                 Shape triangle = new Shape(s1, s2, base);
                 double per = triangle.perimeter(s1, s2, base);
-                l.info("Perimeter of Triangle : " + per);
-                l.info("Area of Triangle :" + triangle.area(s1, s2, base));
+                logger.log("Perimeter of Triangle : " + per);
+                logger.log("Area of Triangle :" + triangle.area(s1, s2, base));
                 break;
             default:
             	l.info("Enter the valid shape :");
