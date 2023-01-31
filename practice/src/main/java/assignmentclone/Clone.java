@@ -56,6 +56,6 @@ public static void main(String[] args)throws CloneNotSupportedException
 		 l.info("Both points are not equal");
 	 }
 	 Clone r = (Clone)p.clone();
-	 l.info("Values of Cloned Objects: " + (r.x) +" " + (r.y));
+	logger.log("Values of Cloned Objects: " + (r.x) +" " + (r.y));
  }
 }
