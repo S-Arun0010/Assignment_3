@@ -12,10 +12,10 @@ public class Bank {
         balance = b;
     }
     public void balanceamount() {
-    	logger.log("Total Balance Amount :" + balance + "Rs");
+    	l.log(Level.INFO,()->"Total Balance Amount :" + balance + "Rs");
     }
     public void deposit(int depositamount) {
-    	logger.log("The Deposited Amount is :" + depositamount + "Rs");
+    	l.log(Level.INFO,()->"The Deposited Amount is :" + depositamount + "Rs");
         balance = balance + depositamount;
     }
     public void withdraw(int withdrawamount) {
@@ -36,9 +36,9 @@ public class Bank {
     public static void main(String[] args) {
     	
         Bank a = new Bank("Arun", 123456789123456789L, 1000);
-        logger.log("Name :" + a.name);
-       logger.log("Account Number :" + a.acc);
-        logger.log("Current Balance :" + a.balance);
+       l.log(Level.INFO,()->"Name :" + a.name);
+       l.log(Level.INFO,()->"Account Number :" + a.acc);
+        l.log(Level.INFO,()->"Current Balance :" + a.balance);
         int check = 0;
         try
         {
