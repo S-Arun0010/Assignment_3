@@ -44,8 +44,8 @@ public class Creditcard implements Cloneable {
 		}
 		Creditcard b = (Creditcard)c.clone(); 
 		l.info("Details of new credit card:");
-		logger.log("Name :" + b.name );
-		logger.log("Credit Card Number :" + b.cardnumnber);
-		logger.log("Expiry Date :" + b.date);
+		l.log(Level.INFO,()->"Name :" + b.name );
+		l.log(Level.INFO,()->"Credit Card Number :" + b.cardnumnber);
+		l.log(Level.INFO,()->"Expiry Date :" + b.date);
 	}
 }
